@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EFE - Reform From Violence</title>
+  <meta name="description" content="Laporkan tindakan kekerasan secara anonim dan aman." />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project-2.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="nav-logo">EFE</div>
+      <div class="nav-toggle" id="navToggle">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#report" class="nav-link">Report</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="Header1" id="home">
+      <h1 id="EFE">EFE</h1>
+      <h2>Reform From Violence</h1>
+        <p class="About">Laporkan kekerasan secara cepat dan aman melalui platform kami.</p>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>EFE adalah platform yang bertujuan untuk membantu murid-murid SMP Negeri 5 Surabaya melaporkan tindakan
+        kekerasan secara anonim dan aman.</p>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="explanation">
+      <h2>Penjelasan</h2>
+
+      <div id="exp-content-1" class="exp-content">
+        <h3>Kekerasan Fisik</h3>
+        <p>Kekerasan fisik adalah tindakan yang menyebabkan cedera atau trauma fisik pada seseorang. Ini termasuk
+          pemukulan, penendangan, dan bentuk-bentuk kekerasan lainnya yang dapat menyebabkan luka fisik.</p>
+      </div>
+
+      <div id="exp-content-2" class="exp-content">
+        <h3>Kekerasan Verbal</h3>
+        <p>Kekerasan Verbal adalah jenis kekerasan yang dilakukan melalui kata-kata. Ini meliputi perilaku yang
+          menyakitkan, merendahkan, atau mengintimidasi seseorang melalui ucapan, tanpa melibatkan tindakan fisik. </p>
+      </div>
+    </section>
+
+    <div id="exp-content-3" class="exp-content">
+      <h3>Perundungan</h3>
+      <p>Perundungan, yang sering disebut juga dengan bullying, adalah perilaku agresif yang melibatkan penindasan,
+        penganiayaan, atau intimidasi yang dilakukan secara sengaja dan berulang-ulang terhadap seseorang.</p>
+    </div>
+
+    <div id="exp-content-4" class="exp-content">
+      <h3>Diskriminasi</h3>
+      <p>Diskriminasi adalah perlakuan tidak adil terhadap individu atau kelompok berdasarkan karakteristik tertentu,
+        seperti ras, jenis kelamin, agama, atau orientasi seksual.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <section id="report">
+      <h2>Report</h2>
+      <h3>Laporan Anda</h3>
+
+      <form id="report-form">
+        <div class="form-group">
+          <label for="input-name">Nama Anda</label>
+          <input type="text" id="input-name" name="name" placeholder="Nama" required />
+        </div>
+
+        <div class="form-group">
+          <label for="input-email">Alamat Email Anda</label>
+          <input type="email" id="input-email" name="email" placeholder="Alamat Email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="input-date">Tanggal</label>
+          <input type="date" id="input-date" name="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="input-location">Lokasi Kejadian</label>
+          <input type="text" id="input-location" name="location" placeholder="Lokasi Kejadian" required />
+        </div>
+
+        <div class="form-group">
+          <label for="input-address">Alamat Rumah</label>
+          <input type="text" id="input-address" name="address" placeholder="Alamat" required />
+        </div>
+
+        <div class="form-group">
+          <label for="incidentType">Jenis Insiden</label>
+          <select id="incidentType" name="incidentType" required>
+            <option value="">-- Pilih Jenis --</option>
+            <option value="Kekerasan Fisik">Kekerasan Fisik</option>
+            <option value="Kekerasan Verbal">Kekerasan Verbal</option>
+            <option value="Perundungan">Perundungan</option>
+            <option value="Diskriminasi">Diskriminasi</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Detail Tambahan</label>
+          <textarea id="details" name="details" rows="4" placeholder="Jelaskan lebih lanjut kejadian ini..."
+            required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="consentToContact" value="Ya" />
+            Saya bersedia dihubungi untuk tindak lanjut
+          </label>
+        </div>
+
+        <button class="btn-submit" type="submit">Submit</button>
+      </form>
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Disclaimer</h4>
+        <p>Website ini hanyalah prototype yang dikembangkan untuk lomba. Fitur tambahan akan hadir di masa depan.</p>
+      </div>
+      <div class="footer-section">
+        <h4 id="contact">Kontak</h4>
+        <p>Email: #</p>
+        <p>Telp: #</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 #. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+    const navLinkEls = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll("section");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinkEls.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    const form = document.getElementById("report-form");
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwStSsoCssBySWKZCQMabklkp2EbuZi1YJkjgMuoUdA1HDLOyqhe-S4JQBdchMJzXD4/exec";
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const submitButton = document.querySelector(".btn-submit");
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+
+      const lastSent = localStorage.getItem("lastReportTime");
+      const now = Date.now();
+      if (lastSent && now - lastSent < 2 * 60 * 1000) {
+        alert("Tunggu 2 menit sebelum mengirim laporan lagi.");
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit";
+        return;
+      }
+
+      const formData = new FormData(form);
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: formData,
+      })
+        .then(() => {
+          localStorage.setItem("lastReportTime", now);
+          alert("Laporan berhasil dikirim!");
+          form.reset();
+        })
+        .catch(() => alert("Gagal mengirim laporan."))
+        .finally(() => {
+          submitButton.disabled = false;
+          submitButton.textContent = "Submit";
+        });
+    });
+  </script>
+</body>
+
+</html>
